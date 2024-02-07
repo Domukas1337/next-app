@@ -1,8 +1,10 @@
+import Feed from "./feed";
+
 export default function Home() {
   return (
     <main>
       <div>
-        <h1 className="text-3xl font-bold underline">Hello world!</h1>
+        <Feed/>
       </div>
     </main>
   );
