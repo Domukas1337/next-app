@@ -2,3 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+    --foreground-rgb: 0, 0, 0;
+    --background: #050508;
+    --primary: #9fa2ca;
+    --secondary: #5e3765;
+    --accent: #ac68a5;
+  }
+  
