@@ -8,5 +8,8 @@
     --primary: #9fa2ca;
     --secondary: #5e3765;
     --accent: #ac68a5;
+    background-color: var(--background);
+    color: white;
+
   }
   
