@@ -31,6 +31,12 @@
 .accent {
   color: var(--accent);
 }
+.bg-accent {
+  background-color: var(--accent);
+}
 .hover-accent:hover {
   background-color: var(--primary);
+}
+#button-bg{
+  @apply flex justify-center bg-accent font-bold py-4 px-16 rounded-full mx-auto my-4 :hover:bg-; 
 }
