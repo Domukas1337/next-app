@@ -21,8 +21,9 @@ export default function Sidebar (){
                 </ul>
             </div>
             <div>
-                <button id="button-bg"
-                >Post</button>
+                <Link href="/">
+                    <p className="button-bg">Post</p>
+                </Link>
             </div>
         </div>
     )
