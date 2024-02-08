@@ -1,3 +1,4 @@
+import { FaLinux } from "react-icons/fa";
 import { FaHome } from "react-icons/fa";
 import { FaSearch } from "react-icons/fa";
 import { FaBell } from "react-icons/fa";
@@ -10,6 +11,11 @@ import { FaUser } from "react-icons/fa";
 import { FaStream } from "react-icons/fa";
 
 const SidebarItems = [
+    {
+        name: "Huitter",
+        path: "/",
+        icon: FaLinux
+    },
     {
         name: "Home",
         path: "/",
