@@ -10,7 +10,7 @@ export default function Sidebar (){
                     href={item.path} 
                     key={item.name}
                     >
-                        <li className="flex items-center p-2 hover:bg-slate-200 rounded-md transition-all duration-150">
+                        <li className="flex items-center p-2 hover:bg-slate-200 rounded-md transition-all duration-150 text-lg">
                             <item.icon className="w-6 h-6 m-2"/>
                             {item.name}
                         </li>
