@@ -12,23 +12,25 @@
     color: white;
 
   }
-  .background {
-    background-color: var(--background);
-  }
+.background {
+  background-color: var(--background);
+}
   
-  .foreground {
-    color: var(--foreground-rgb);
-  }
-  
-  .primary {
-    color: var(--primary);
-  }
-  
-  .secondary {
-    color: var(--secondary);
-  }
-  
-  .accent {
-    color: var(--accent);
-  }
-  
+.foreground {
+  color: var(--foreground-rgb);
+}
+
+.primary {
+  color: var(--primary);
+}
+
+.secondary {
+  color: var(--secondary);
+}
+
+.accent {
+  color: var(--accent);
+}
+.bg-primary {
+  background-color: var(--primary);
+}

@@ -1,6 +1,6 @@
-import Feed from "./feed";
+import Feed from "./Feed/feed";
 import Sidebar from "./Sidebar/Sidebar";
-import AnotherFeed from "./anotherFeed";
+import AnotherFeed from "./AnotherFeed/anotherFeed";
 
 export default function Home() {
   return (
