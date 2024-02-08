@@ -9,6 +9,7 @@ import { FaHouseUser } from "react-icons/fa";
 import { FaTwitterSquare } from "react-icons/fa";
 import { FaUser } from "react-icons/fa";
 import { FaStream } from "react-icons/fa";
+import { FaDove } from "react-icons/fa";
 
 const SidebarItems = [
     {
@@ -66,6 +67,7 @@ const SidebarItems = [
         path: "/",
         icon: FaStream
     },
+
 ]
 
 export default SidebarItems
