@@ -10,7 +10,7 @@ export default function Search() {
                 <input 
                     type="text" 
                     placeholder="Search" 
-                    className="bg-black outline-none mx-2"
+                    className="background outline-none mx-2 p-2 w-full"
                 />
             </form>
         </div>
