@@ -1,7 +1,9 @@
 import feedComponents from "./feedComponents";
 import Link from "next/link";
+import Post from "../Post/post";
+import posts from "../Post/posts";
 
-const component_class_name = "hover:bg-gray-800 w-full text-center p-4 transition-all"
+const component_class_name = "hover:bg-gray-800 mb-2 w-full text-center p-4 transition-all"
 
 export default function Feed() {
     return (
@@ -19,8 +21,17 @@ export default function Feed() {
                     </Link>
                 ))}
             </div>
-            <div className="flex items-center justify-center">
-                <h1>Feed</h1>
+            <div className="flex flex-col gap-2 m-2 items-center justify-center">
+                {posts.map((post) => (
+                    <Post
+                    key={post.post_title}
+                    image={post.image}
+                    username={post.username}
+                    name={post.name}
+                    post_title={post.post_title}
+                    post_text={post.post_text}
+                    />
+                ))}
             </div>
         </div>
     );
