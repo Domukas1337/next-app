@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Post(props: {image: string ,username: string, name: string, post_title: string, post_text: string}) {
     return (
-        <div className="flex flex-col p-4 justify-center border-2 w-1/2">
+        <div className="flex flex-col p-4 justify-center border-2 mx-8">
             <div className="flex flex-row gap-2">
                 <Image src={props.image} alt="user" width={50} height={50} className="rounded-full"/>
                 <div>
