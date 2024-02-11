@@ -2,8 +2,11 @@
 import { useCallback, useState } from "react";
 import Input from "../Login/input";
 import LoginMenu from "../Login/LoginMenu";
+import useLoginModal from "../../../hooks/useLoginModal";
 
 const LoginModal = () => {
+
+  const loginModal = useLoginModal();
 
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
@@ -15,7 +18,7 @@ const onSubmit = useCallback(async () => {
       setIsLoading(true);
 
 
-      LoginModal.onClose();
+      loginModal.onClose();
     } catch (error) {
       console.log(error)
     } finally {
@@ -24,10 +27,9 @@ const onSubmit = useCallback(async () => {
   }, [email, password, LoginModal]);
 
   const onToggle = useCallback(() => {
-    if (isLoading) {
-        return;
-    }
-  }, []);
+    loginModal.onClose();
+    loginModal.onOpen();
+  }, [LoginModal])
 
   const bodyContent = (
     <div className="flex flex-col gap-4">
@@ -65,10 +67,10 @@ const onSubmit = useCallback(async () => {
   return (
     <LoginMenu
       disabled={isLoading}
-      isOpen={LoginMenu.isOpen}
+      isOpen={loginModal.isOpen}
       title="Login"
       actionLabel="Sign in"
-      onClose={LoginMenu.onClose}
+      onClose={loginModal.onClose}
       onSubmit={onSubmit}
       body={bodyContent}
       footer={footerContent}
