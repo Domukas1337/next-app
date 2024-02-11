@@ -5,6 +5,8 @@ import Sidebar from "./Sidebar/Sidebar";
 import AnotherFeed from "./AnotherFeed/anotherFeed";
 import MobileSidebar from "./Sidebar/MobileSidebar";
 import { useEffect, useState } from "react";
+import LoginModal from "./Modals/LoginModal";
+
 
 export default function Home() {
   const [isDesktop, setIsDesktop] = useState(true);
@@ -35,9 +37,11 @@ export default function Home() {
   return (
     <main>
       <div className="flex flex-row mx-4 p-2 gap-4">
+        <LoginModal/>
         {isDesktop ? <MobileSidebar/> : <Sidebar/>}
         <Feed/>
         {isDesktop ? null : <AnotherFeed/>}
+        
       </div>
     </main>
   );
