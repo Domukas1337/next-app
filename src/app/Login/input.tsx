@@ -20,7 +20,7 @@ const Input : React.FC<InputProps> = ({
             placeholder={placeholder}
             value={value}
             type={type}
-            className="border-2 w-full rounded-full p-2 bg-black text-white
+            className="border-2 w-full rounded-md p-2 bg-black text-white
             transition
             disabled:opacity-70
             disabled:cursor-not-allowed

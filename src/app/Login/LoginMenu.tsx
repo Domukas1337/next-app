@@ -58,15 +58,13 @@ const LoginMenu: React.FC<LoginMenuProps> = ({ isOpen, onClose, onSubmit, title,
               h-full
               lg:h-auto
               border-0 
-              rounded-lg 
-              shadow-lg 
+              rounded-lg  
               relative 
               flex 
               flex-col 
               w-full 
-              bg-black 
+              bg-black
               outline-none 
-              focus:outline-none
               "
             >
               {/*header*/}
