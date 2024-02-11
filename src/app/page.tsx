@@ -41,7 +41,6 @@ export default function Home() {
         {isDesktop ? <MobileSidebar/> : <Sidebar/>}
         <Feed/>
         {isDesktop ? null : <AnotherFeed/>}
-        
       </div>
     </main>
   );
