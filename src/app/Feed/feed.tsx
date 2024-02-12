@@ -1,14 +1,22 @@
 import feedComponents from "./feedComponents";
 import Link from "next/link";
 import Post from "../Post/post";
-import posts from "../Post/posts";
 import followingPosts from "../Post/followedposts";
 import { useState } from "react";
+import { PrismaClient } from "@prisma/client";
 
 const component_class_name = "hover:bg-gray-800 mb-2 w-full text-center p-4 transition-all"
 
-export default function Feed() {
+const prisma = new PrismaClient();
+
+async function getPosts() {
+    const posts = await prisma.post.findMany();
+    return posts;
+}
+
+export default async function Feed() {
     const [isPostFollow, setFollowPost] = useState(0);
+    const posts = await getPosts();
 
     return (
         <div className="border-2 w-screen">
